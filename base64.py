@@ -31,12 +31,9 @@ def chunked(data,n,pad='0'):
     return chunks
 
 def basechars(n):
-    if n <= 25:
-        return chr(65 + n)
-    elif n <= 51:
-        return chr(97 + (n - 26))
-    elif n <= 61:
-        return chr(48 + (n - 52))
+    if n <= 25: return chr(65 + n)
+    elif n <= 51: return chr(97 + (n - 26))
+    elif n <= 61: return chr(48 + (n - 52))
     elif n == 62: return 43
     elif n == 63: return 47
 
